@@ -40,10 +40,10 @@ body{
 }
 
 .relogio span {
-    font-size: 60px;
     font-weight: bolder;
+    font-size: 60px; 
 }
 
 .relogio span.tempo {
-    font-size: 10px;
+    font-size: 20px;
 }
