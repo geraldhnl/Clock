@@ -10,6 +10,7 @@ body{
     height: 100vh;
     background: linear-gradient(120deg, #000000, #4e4848);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -46,4 +47,72 @@ body{
 
 .relogio span.tempo {
     font-size: 20px;
+}
+
+.weather{
+    margin-top: 20px;
+    background: rgba(143, 143, 143, 0.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 10px;
+    width: 20%;
+}
+
+.input-city{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #7c7c7c2b;
+    color: white;
+    width: calc(100% - 100px);
+}
+
+.btn-search{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #7c7c7c2b;
+    cursor: pointer;
+    float: right;
+}
+
+.img-button{
+    width: 20px;
+}
+
+.weather-info{
+    margin-top: 20px;
+}
+
+.city{
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.temp{
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+.weather-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.texto-previsao{
+    color: white;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.umidade{
+    color: white;
+    margin-top: 20px;
 }
