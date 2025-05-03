@@ -47,3 +47,27 @@ function buttonclick(){
 
     buscarcidade(cidade)
 }
+
+async function buscarPorCoordenadas(lat, lon) {
+    const dados = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&lang=pt_br&units=metric`)
+        .then((response) => response.json());
+
+    colocardadosnatela(dados);
+}
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+                buscarPorCoordenadas(lat, lon);
+            },
+            (error) => {
+                alert("Não foi possível obter a localização.");
+            }
+        );
+    } else {
+        alert("Geolocalização não é suportada pelo seu navegador.");
+    }
+}

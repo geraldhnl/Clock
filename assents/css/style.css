@@ -116,3 +116,18 @@ body{
     color: white;
     margin-top: 20px;
 }
+
+.btn-location{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #7c7c7c2b;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.my-location{
+    color: white;
+    font-size: 15px;
+}
