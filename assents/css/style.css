@@ -141,3 +141,70 @@ body{
     z-index: 1000;
     background-color: #111;
 }
+
+ /* Media Queries para respondividade*/
+@media (max-width: 900px) {
+    .relogio {
+        width: 95vw;
+        height: 150px;
+    }
+    .relogio div {
+        width: 90px;
+        height: 110px;
+    }
+    .relogio span {
+        font-size: 36px;
+    }
+    .relogio span.tempo {
+        font-size: 14px;
+    }
+    .weather {
+        width: 90vw;
+        padding: 8px;
+    }
+    .city {
+        font-size: 22px;
+    }
+    .temp {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .relogio {
+        flex-direction: column;
+        width: 98vw;
+        height: auto;
+        box-shadow: none;
+    }
+    .relogio div {
+        width: 90vw;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    .weather {
+        width: 98vw;
+        padding: 6px;
+    }
+    .input-city {
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .btn-search, .btn-location {
+        width: 100%;
+        margin-top: 8px;
+        float: none;
+    }
+    .weather-icon {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .texto-previsao {
+        margin-left: 0;
+        margin-top: 6px;
+    }
+}
